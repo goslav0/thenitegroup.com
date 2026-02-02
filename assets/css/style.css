@@ -662,3 +662,13 @@ a {
   position: relative;
   z-index: 1001;
 }
+.social-icon svg {
+  fill: white;
+  pointer-events: none;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
