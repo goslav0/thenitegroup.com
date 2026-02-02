@@ -639,3 +639,19 @@ a {
     margin-bottom: 14px;
   }
 }
+/* ===== REGULAMIN – MOBILE FIX ===== */
+@media (max-width: 768px) {
+  .regulamin-intro {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+.topbar {
+  position: relative;
+  z-index: 1000;
+}
+
+.social-links a {
+  pointer-events: auto;
+}
