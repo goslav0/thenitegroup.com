@@ -653,16 +653,12 @@ a {
     opacity: 0.75;
   }
 
-}
-.topbar {
-  position: relative;
-  z-index: 1000;
-}
-
-.social-links a {
+/* ===== TOPBAR – CLICK FIX ===== */
+.topbar * {
   pointer-events: auto;
 }
-.event-page {
+
+.topbar a {
   position: relative;
-  z-index: 1;
+  z-index: 1001;
 }
