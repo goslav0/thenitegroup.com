@@ -638,14 +638,21 @@ a {
   .regulamin-rules li {
     margin-bottom: 14px;
   }
-}
-/* ===== REGULAMIN – MOBILE FIX ===== */
+/* ===== REGULAMIN – MOBILE SEPARATOR FIX ===== */
 @media (max-width: 768px) {
+
   .regulamin-intro {
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
   }
+
+  .regulamin-intro p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    opacity: 0.75;
+  }
+
 }
 .topbar {
   position: relative;
