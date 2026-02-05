@@ -3,63 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SUMMER VILLA PARTY – NITE GROUP</title>
+  <title>SUMMER VILLA – VYBE x NITE GROUP</title>
 
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="SUMMER VILLA – VYBE x NITE GROUP">
+  <meta property="og:description" content="SUMMER VILLA PARTY w WARSZAWSKIEJ WILII">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenitegroup.com">
+  <meta property="og:image" content="https://thenitegroup.com/assets/images/czarne.png">
+
+  <!-- FAVICON -->
   <link rel="icon" type="image/png" href="assets/images/czarne.png">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
+<!-- TOPBAR – KOPIA WALENTYNEK -->
 <header class="topbar">
-  <!-- KOPIA 1:1 Z WALENTYNEK -->
+  <!-- LEFT: SOCIAL -->
+  <div class="top-left social-links">
+    <a href="https://www.instagram.com/thenitegroup?igsh=MTIxM3F5dXV2ODd2dg%3D%3D&utm_source=qr"
+       target="_blank" aria-label="Instagram" class="social-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill="white"
+          d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+      </svg>
+    </a>
+
+    <a href="https://www.tiktok.com/@thenitegroup?_r=1&_t=ZN-93F5YaqHGlf"
+       target="_blank" aria-label="TikTok" class="social-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill="white"
+          d="M21 8.5a6.7 6.7 0 0 1-4.5-1.7v7.4a6.3 6.3 0 1 1-6.3-6.3c.5 0 1 .1 1.5.2v3.2a3.1 3.1 0 1 0 2.3 3V2h3.1a6.7 6.7 0 0 0 4.9 4.9v1.6z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- CENTER: LOGO -->
+  <div class="top-center">
+    <a href="index.html">
+      <img src="assets/images/nitelogo.png" alt="NITE GROUP">
+    </a>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="topbar-right">
+    <a href="wydarzenia.html" class="nav-desktop">WYDARZENIA</a>
+
+    <!-- MOBILE HAMBURGER -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
 </header>
 
+<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="wydarzenia.html">Wydarzenia</a>
 </div>
 
+<!-- EVENT PAGE -->
 <section class="event-page">
 
   <div class="event-header">
-    <img src="assets/images/summer.png" class="event-poster" />
+    <img src="assets/images/rooftop2.PNG" class="event-poster" />
 
     <div class="event-main">
-      <h1 class="event-title">SUMMER VILLA PARTY</h1>
+      <h1 class="event-title">SUMMER VILLA - NITE</h1>
 
       <div class="event-facts">
-        <div>Warszawa – 0</div>
-        <div>0</div>
-        <div>Start: 0</div>
+        <div>Warszawa – WILANÓW</div>
+        <div>04.07.2025</div>
+        <div>Start: 21:00</div>
         <div>Wstęp: 16+</div>
       </div>
 
       <div class="tickets">
-        <a href="https://www.instagram.com/thenitegroup/" class="btn">
-          ZOBACZ ZDJĘCIA
-        </a>
+        <a href="https://www.instagram.com/thenitegroup/" class="btn">ZOBACZ ZDJĘCIA</a>
       </div>
     </div>
   </div>
 
   <div class="event-description">
-
     <div class="event-text">
-      <p><strong>SUMMER PARTY W WARSZAWSKIEJ WILLI</strong></p>
-      <p>VYBE x THE NITE GROUP</p>
-      <p>Willa 400m², ogród, taras, strefa chill.</p>
+      <p><strong>SUMMER VILLA WARSZAWA</strong></p>
+      <p>Wjeżdżamy do willi o powierzchni ponad 400m2 - dwa piętra, ogromny salon i strefa VIP do WASZEJ DYSPOZYCJI.
+      Do tego wielki ogród, taras i strefa CHILL.</p>
+      <p>TO BĘDZIE NAJLPSZE ROZPOCZĘCIE LATA!</p>
     </div>
 
-    <ul class="event-list">
-      <li>Willa 400m²</li>
-      <li>Ogród & taras</li>
-      <li>Strefa VIP</li>
-    </ul>
+    <div class="event-section">
+      <h3>Na miejscu</h3>
+      <ul class="event-list">
+        <li>BLENDUSIAK</li>
+        <li>STREFA VIP Z OPEN BAREM</li>
+        <li>EKIPA MONSTER ENERGY</li>
+      </ul>
+    </div>
 
     <div class="event-footer">IT’S NITE O’CLOCK</div>
   </div>
 
 </section>
 
+<script src="assets/js/main.js"></script>
+</body>
+</html>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
