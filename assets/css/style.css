@@ -698,3 +698,18 @@ a {
 .btn-secondary:hover {
   background: rgba(220,220,220,0.85);
 }
+/* =========================
+   DJ LINK – HOVER EFFECT
+========================= */
+
+.dj-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: font-weight 0.15s ease, opacity 0.15s ease;
+}
+
+.dj-link:hover {
+  font-weight: 700;
+  opacity: 0.9;
+}
