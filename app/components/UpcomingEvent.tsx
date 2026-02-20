@@ -59,7 +59,7 @@ export default function UpcomingEvent() {
         <div className="space-y-6 w-full mb-12 border-t border-white/5 pt-6">
           <div className="flex justify-between border-b border-white/10 pb-4">
             <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold italic">Data</span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-white font-bold">20.03.2025 21:00</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-white font-bold">20.03.2026 21:00</span>
           </div>
           <div className="flex justify-between border-b border-white/10 pb-4">
             <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold italic">Lokalizacja</span>
