@@ -71,7 +71,7 @@ export default function UpcomingEvent() {
         <div className="mb-10 flex items-start gap-3">
           <div className="mt-1.5 w-1.5 h-1.5 bg-white rounded-full animate-pulse shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
           <p className="text-zinc-500 text-[9px] uppercase tracking-[0.25em] leading-relaxed">
-            Wszystkie informacje organizacyjne dostępne są po kliknięciu <span className="text-white font-bold">KUP BILET</span>
+            Informacje organizacyjne dostępne są po kliknięciu <span className="text-white font-bold">KUP BILET</span>
           </p>
         </div>
 
