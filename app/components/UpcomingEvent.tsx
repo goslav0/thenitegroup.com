@@ -8,7 +8,7 @@ export default function UpcomingEvent() {
   return (
     <section className="min-h-screen bg-black flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-20 gap-12 md:gap-24">
       
-      {/* LEWA STRONA: PLAKAT */}
+      {/* LEWA STRONA: PLAKAT (TERAZ KLIKALNY) */}
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,14 +16,17 @@ export default function UpcomingEvent() {
         viewport={{ once: true }}
         className="w-full md:w-1/2 max-w-[500px] relative group"
       >
-        <div className="relative aspect-[4/5] overflow-hidden border border-white/10 bg-zinc-900 shadow-2xl">
-          <img 
-            src="/plakat.png" 
-            alt="2016 PARTY"
-            className="w-full h-full object-cover transition-transform duration-[1.5s] ease-in-out scale-100 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
-        </div>
+        {/* LINK NA BANERZE */}
+        <a href={linkDoBiletow} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+          <div className="relative aspect-[4/5] overflow-hidden border border-white/10 bg-zinc-900 shadow-2xl">
+            <img 
+              src="/plakat.png" 
+              alt="2016 PARTY"
+              className="w-full h-full object-cover transition-transform duration-[1.5s] ease-in-out scale-100 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+          </div>
+        </a>
 
         {/* Numer w tle */}
         <div className="absolute -bottom-10 -left-10 text-white/5 text-[120px] font-black -z-10 pointer-events-none select-none">
