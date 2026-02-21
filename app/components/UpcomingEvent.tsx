@@ -2,13 +2,13 @@
 import { motion } from "framer-motion";
 
 export default function UpcomingEvent() {
-  // --- TUTAJ WKLEJ SWÓJ LINK ---
+  // --- TWÓJ LINK DO BILETÓW ---
   const linkDoBiletow = "https://new.vybe.social/pl/e/ZpB5qUJueRiB"; 
 
   return (
     <section className="min-h-screen bg-black flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-20 gap-12 md:gap-24">
       
-      {/* LEWA STRONA: PLAKAT (PNG) */}
+      {/* LEWA STRONA: PLAKAT */}
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export default function UpcomingEvent() {
           energię z przeszłości! Klimat, muzyka i stylówki - jak w 2016!
         </p>
         
-        <div className="space-y-6 w-full mb-12 border-t border-white/5 pt-6">
+        <div className="space-y-6 w-full mb-8 border-t border-white/5 pt-6">
           <div className="flex justify-between border-b border-white/10 pb-4">
             <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold italic">Data</span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-white font-bold">20.03.2026 21:00</span>
@@ -67,7 +67,15 @@ export default function UpcomingEvent() {
           </div>
         </div>
 
-        {/* PRZYCISK KUP BILET (Zmieniony na <a>) */}
+        {/* NOWY DOPISZEK INFORMACYJNY Z PULSUJĄCĄ KROPKĄ */}
+        <div className="mb-10 flex items-start gap-3">
+          <div className="mt-1.5 w-1.5 h-1.5 bg-white rounded-full animate-pulse shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
+          <p className="text-zinc-500 text-[9px] uppercase tracking-[0.25em] leading-relaxed">
+            Wszystkie informacje organizacyjne oraz bilety dostępne są po kliknięciu <span className="text-white font-bold">KUP BILET</span>
+          </p>
+        </div>
+
+        {/* PRZYCISK KUP BILET */}
         <a 
           href={linkDoBiletow}
           target="_blank"
