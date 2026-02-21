@@ -11,10 +11,10 @@ export default function UpcomingEvent() {
       
       {/* LEWA STRONA: PLAKAT (ZOPTYMALIZOWANY I KLIKALNY) */}
       <motion.div 
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 20 }} // Zmniejszono y z 40 na 20 dla szybkości
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.5 }} // Skrócono czas z 1s na 0.5s
+        viewport={{ once: true, amount: 0.2 }} // Odpala szybciej po wejściu w widok
         className="w-full md:w-1/2 max-w-[500px] relative group"
       >
         {/* LINK NA BANERZE */}
@@ -40,10 +40,10 @@ export default function UpcomingEvent() {
 
       {/* PRAWA STRONA: OPIS */}
       <motion.div 
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, y: 20 }} // Zmieniono z x:20 na y:20 dla spójności na mobile
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }} // Usunięto delay 0.2s, żeby wskakiwało od razu
+        viewport={{ once: true, amount: 0.2 }}
         className="w-full md:w-1/3 flex flex-col items-start"
       >
         <div className="flex items-center gap-4 mb-8">
@@ -58,7 +58,6 @@ export default function UpcomingEvent() {
           <span className="text-zinc-600 font-light italic">PARTY</span>
         </h2>
 
-        {/* Poprawiony kontrast tekstu (zinc-300) */}
         <p className="text-zinc-300 text-sm leading-relaxed mb-12 font-light tracking-wide max-w-sm">
           Przygotuj się na noc, która przejdzie do historii. Przenosimy niezapomnianą 
           energię z przeszłości! Klimat, muzyka i stylówki - jak w 2016!
